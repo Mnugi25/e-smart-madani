@@ -11,6 +11,9 @@ return Application::configure(basePath: dirname(__DIR__))
         health: '/up',
     )
     ->withMiddleware(function (Middleware $middleware): void {
+        // Percayai reverse proxy HTTPS (Render / Cloudflare)
+        $middleware->trustProxies(at: '*');
+
         // Daftarkan alias 'role' di sini agar bisa digunakan di routes/web.php
         $middleware->alias([
             'role' => \App\Http\Middleware\CheckRole::class,
