@@ -1,0 +1,11 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # Blokir akses langsung ke file & folder sensitif Laravel
+    RewriteRule ^(\.env|\.git|composer\.(json|lock)|package(-lock)?\.json|Dockerfile|docker-entrypoint\.sh|vercel\.json|phpunit\.xml|artisan|vite\.config\.mjs) - [F,L,NC]
+    RewriteRule ^(app|bootstrap|config|database|resources|routes|storage|tests|vendor|api)(/|$) - [F,L,NC]
+
+    # Arahkan semua request lain ke folder public/
+    RewriteCond %{REQUEST_URI} !^/public/
+    RewriteRule ^(.*)$ public/$1 [L]
+</IfModule>

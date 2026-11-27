@@ -1107,7 +1107,7 @@
                 <img src="{{ asset('template/images/smk madani.jpg') }}" alt="Logo SMK Al-Madani" class="school-logo-pill" />
                 <div class="ms-2">
                     <span class="fw-bold font-heading" style="font-size: 19px; color: var(--text-heading);">E-Learning</span>
-                    <span class="gradient-text font-heading fw-bold" style="font-size: 19px;">Madani</span>
+                    <span class="gradient-text font-heading fw-bold" style="font-size: 19px;">SMK Al-Madani</span>
                     <span class="brand-badge d-none d-sm-inline">Smart School</span>
                 </div>
             </a>
@@ -1756,7 +1756,7 @@
                     <div class="d-flex align-items-center gap-3 mb-3">
                         <img src="{{ asset('template/images/smk madani.jpg') }}" alt="Logo" class="school-logo-pill" />
                         <div>
-                            <div class="footer-brand-title">E-Learning Madani</div>
+                            <div class="footer-brand-title">E-Learning SMK Al-Madani</div>
                             <div class="small fw-semibold" style="color: var(--text-body);">SMK Al-Madani Pontianak</div>
                         </div>
                     </div>
